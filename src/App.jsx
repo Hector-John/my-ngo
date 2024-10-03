@@ -8,7 +8,7 @@ import Blog from "./pages/blogs/Blog";
 import Contact from "./pages/contact/Contact";
 import Donate from "./pages/donate/Donate";
 import Footer from "./components/Footer";
-
+ 
 function App() {
   return (
     <div>

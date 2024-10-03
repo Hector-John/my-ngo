@@ -2,7 +2,8 @@ import React from "react";
 
 const Mission = () => {
   return (
-    <div className="padded h-[80vh] flex items-center mt-6 lg:mt-13">
+    <div className="padded h-full lg:h-[80vh] flex items-center my-22 lg:mt-13 my-16 md:my-16">
+
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div className="flex flex-col justify-center mb-6 md:mb-0 md:col-span-1">
           <h1 className="text-accent uppercase font-bold text-2xl md:text-3xl text-center lg:text-[.85rem] md:text-start mb-3">

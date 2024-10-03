@@ -7,7 +7,7 @@ import Testimonial from "../../components/Testimonial";
 import Goals from "../../components/Goals";
 import DonateCta from "../../components/DonateCta";
 import Sponsors from "../../components/Sponsors";
-
+ 
 const Home = () => {
   return (
     <section>

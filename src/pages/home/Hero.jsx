@@ -82,7 +82,7 @@ const Hero = () => {
       </div>
 
       <motion.div
-        className="hidden md:grid text-center py-10 px-8 grid-cols-3 gap-4 w-[85%] left-[7.5%] md:top-[90%] lg:top-[85%] bg-white rounded z-50 shadow-lg absolute"
+        className="hidden md:grid lg:grid text-center py-10 px-8 grid-cols-3 gap-4 w-[85%] left-[7.5%] md:top-[85%] lg:top-[85%] bg-white rounded z-50 shadow-lg absolute"
         initial={{ rotateX: -90, opacity: 0 }}
         whileInView={{ rotateX: 0, opacity: 1 }}
         viewport={{ once: true }}

@@ -26,15 +26,40 @@ import mercury from '../assets/mercury.png'
 import microlend from '../assets/microlend.png'
 import sponsor1 from '../assets/sponsor1.png'
 import sponsor2 from '../assets/sponsor2.png'
+import sponsor6 from '../assets/sponsor6.png'
 import teaching from '../assets/teaching.png'
 import teachingCommunity from '../assets/teachingCommunity.png'
 import team from '../assets/team.png'
 import teenGirls from '../assets/teenGirls.png'
 import volunteer1 from '../assets/volunteer1.png'
 import youngGirls from '../assets/youngGirls.png'
+import sponsorsvg1 from '../assets/sponsorsvg1.svg';
+import sponsorsvg2 from '../assets/sponsorsvg2.svg'; 
+import sponsorsvg3 from '../assets/sponsorsvg3.svg';
+import sponsorsvg4 from '../assets/sponsorsvg4.svg';
+import sponsorsvg5 from '../assets/sponsorsvg5.svg';
+import avatar1 from '../assets/avatar1.png';
+import avatar2 from '../assets/avatar2.png';
+import avatar3 from '../assets/avatar3.png';
+import avatar4 from '../assets/avatar4.png';
+import volunteers from '../assets/volunteers.png';
+
+
+
 
 
 const images = {
+  avatar1,
+  avatar2,
+  avatar3,
+  avatar4,
+  volunteers,
+  sponsorsvg1,
+  sponsorsvg2,
+  sponsorsvg3,
+  sponsorsvg4,
+  sponsorsvg5,
+  sponsor6,
     banner,
     bgimg,
     cert,

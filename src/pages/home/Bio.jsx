@@ -29,7 +29,7 @@ const Bio = () => {
             </button>
           </div>
 
-          <div className="images relative h-full flex justify-center">
+          <div className="images relative h-full flex lg:justify-center">
             <img
               src={images.gallery1}
               alt="Gallery Image"
