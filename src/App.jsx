@@ -10,6 +10,7 @@ import Blog from "./pages/blogs/Blog";
 import Contact from "./pages/contact/Contact";
 import Donate from "./pages/donate/Donate";
 import Footer from "./components/Footer";
+import BlogSingle from "./pages/blogs/BlogSingle";
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path="/causes-single" element={<CausesSingle />} />
         <Route path="/about" element={<About />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blog-single" element={<BlogSingle />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/donate" element={<Donate />} />
       </Routes>

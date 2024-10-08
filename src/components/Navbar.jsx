@@ -49,32 +49,36 @@ const Navbar = () => {
 
         <ul className="flex items-center justify-between ">
           {["Home", "Causes", "About", "Blog", "Contact"].map((link, index) => {
-            // Determine if "Causes" should be active
+            
             const isCausesActive =
               link === "Causes" &&
               (location.pathname === "/causes" ||
                 location.pathname === "/causes-single");
-
+                
+                const isBlogActive =
+                link === "Blog" &&
+                (location.pathname === "/blog" ||
+                  location.pathname === "/blog-single");
             return (
               <li key={index}>
-                <NavLink
-                  to={link === "Home" ? "/" : link.toLowerCase()}
-                  className={({ isActive }) =>
-                    `transition duration-300 top-0 py-[29.5px] px-4  ${
-                      isActive || isCausesActive
-                        ? scrolled
-                          ? "bg-primary text-white"
-                          : "bg-transparent text-primary"
-                        : scrolled
-                        ? "text-textColor"
-                        : "text-gray-300 hover:bg-primary hover:text-white"
-                    }`
-                  }
-                  onClick={() => handleClick(link.toLowerCase())}
-                >
-                  {link}
-                </NavLink>
-              </li>
+              <NavLink
+                to={link === "Home" ? "/" : link.toLowerCase()}
+                className={({ isActive }) =>
+                  `transition duration-300 top-0 py-[29.5px] px-4  ${
+                    isActive || isCausesActive || isBlogActive
+                      ? scrolled
+                        ? "bg-primary text-white"
+                        : "bg-transparent text-primary"
+                      : scrolled
+                      ? "text-textColor"
+                      : "text-gray-300 hover:bg-primary hover:text-white"
+                  }`
+                }
+                onClick={() => handleClick(link.toLowerCase())}
+              >
+                {link}
+              </NavLink>
+            </li>
             );
           })}
         </ul>
