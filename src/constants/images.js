@@ -43,12 +43,16 @@ import avatar2 from '../assets/avatar2.png';
 import avatar3 from '../assets/avatar3.png';
 import avatar4 from '../assets/avatar4.png';
 import volunteers from '../assets/volunteers.png';
+import testimonybg from '../assets/testimonybg.png';
+import causesBg from '../assets/causesBg.png';
 
 
 
 
 
 const images = {
+  causesBg,
+  testimonybg,
   avatar1,
   avatar2,
   avatar3,
