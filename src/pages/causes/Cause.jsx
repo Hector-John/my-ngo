@@ -53,7 +53,7 @@ const Cause = () => {
   return (
     <section className="">
       <header
-        className="relative bg-fixed bg-center bg-cover h-full pb-6 lg:h-[65vh] animate-fadeIn"
+        className="relative bg-fixed bg-center bg-cover h-full pb-8 lg:h-[65vh] animate-fadeIn"
         style={{
           backgroundImage: `url(${images.causesBg})`,
         }}
@@ -63,7 +63,7 @@ const Cause = () => {
           <h1 className="text-white text-4xl mt-[7rem] mb-2 glow-text font-bold ">
             Our Causes
           </h1>
-          <p className="lg:w-[45%] w-[70%] playfair text-xl leading-8 text-white mt-2 ">
+          <p className="lg:w-[45%] w-[70%] playfair text-xl leading-8 text-center text-white mt-2 ">
             There is not a man of us who does not at times need a helping hand
             to be stretched out to him, and then shame upon him who will not
             stretch out the helping hand to his brother.

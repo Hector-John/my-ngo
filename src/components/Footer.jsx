@@ -26,7 +26,9 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col gap-6 items-start lg:items-center">
-          <h3 className="text-lg font-semibold playfair text-white">Quick Links</h3>
+          <h3 className="text-lg font-semibold playfair text-white">
+            Quick Links
+          </h3>
           <div className="flex flex-col gap-2 text-bgColor font-extralight">
             <Link
               to="/"
@@ -34,8 +36,9 @@ const Footer = () => {
             >
               <p>Home</p>
             </Link>
+
             <Link
-              to="/"
+              to="/causes"
               className="transition-all duration-300 hover:text-primary"
             >
               <p>Causes</p>
@@ -62,7 +65,9 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col gap-6">
-          <h3 className="text-lg font-semibold playfair text-white">Get In Touch</h3>
+          <h3 className="text-lg font-semibold playfair text-white">
+            Get In Touch
+          </h3>
           <div className="flex flex-col gap-2 text-bgColor font-extralight">
             <Link
               to="/contact"
@@ -79,7 +84,9 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-col gap-4">
-            <h1 className="text-lg font-semibold playfair text-white">Address</h1>
+            <h1 className="text-lg font-semibold playfair text-white">
+              Address
+            </h1>
             <p className="text-bgColor">
               254 Straight Outta Compton <br />
               Nairobi 00100
@@ -87,9 +94,10 @@ const Footer = () => {
           </div>
         </div>
 
-       
         <div className="flex flex-col gap-4 col-span-1 lg:col-span-2 lg:ml-8 ">
-          <h1 className="playfair text-2xl text-white playfair ">Newsletter</h1>
+          <h1 className=" text-lg font-semibold text-white playfair ">
+            Newsletter
+          </h1>
           <div className="flex">
             <input
               type="email"
@@ -105,7 +113,9 @@ const Footer = () => {
           </p>
 
           <div className="socials">
-            <h1 className="playfair text-2xl text-bgColor mb-3 ">Follow Us</h1>
+            <h1 className=" text-lg font-semibold playfair text-bgColor mb-3 ">
+              Follow Us
+            </h1>
             <div className="flex gap-4 text-bgColor">
               <a
                 href="https://twitter.com"
