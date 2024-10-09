@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { NavLink, useNavigate, useLocation } from "react-router-dom";
+import { NavLink, Link, useNavigate, useLocation } from "react-router-dom"; // Ensure Link is imported
 import images from "../constants/images";
 import HamburgerMenu from "./HamburgerMenu";
 
@@ -47,53 +47,49 @@ const Navbar = () => {
           </NavLink>
         </div>
 
-        <ul className="flex items-center justify-between ">
+        <ul className="hidden lg:flex items-center justify-between ">
           {["Home", "Causes", "About", "Blog", "Contact"].map((link, index) => {
-            
             const isCausesActive =
               link === "Causes" &&
               (location.pathname === "/causes" ||
                 location.pathname === "/causes-single");
-                
-                const isBlogActive =
-                link === "Blog" &&
-                (location.pathname === "/blog" ||
-                  location.pathname === "/blog-single");
+            const isBlogActive =
+              link === "Blog" &&
+              (location.pathname === "/blog" ||
+                location.pathname === "/blog-single");
             return (
               <li key={index}>
-              <NavLink
-                to={link === "Home" ? "/" : link.toLowerCase()}
-                className={({ isActive }) =>
-                  `transition duration-300 top-0 py-[29.5px] px-4  ${
-                    isActive || isCausesActive || isBlogActive
-                      ? scrolled
-                        ? "bg-primary text-white"
-                        : "bg-transparent text-primary"
-                      : scrolled
-                      ? "text-textColor"
-                      : "text-gray-300 hover:bg-primary hover:text-white"
-                  }`
-                }
-                onClick={() => handleClick(link.toLowerCase())}
-              >
-                {link}
-              </NavLink>
-            </li>
+                <NavLink
+                  to={link === "Home" ? "/" : link.toLowerCase()}
+                  className={({ isActive }) =>
+                    `transition duration-300 top-0 py-[29.5px] px-4  ${
+                      isActive || isCausesActive || isBlogActive
+                        ? scrolled
+                          ? "bg-primary text-white"
+                          : "bg-transparent text-primary"
+                        : scrolled
+                        ? "text-textColor"
+                        : "text-gray-300 hover:bg-primary hover:text-white"
+                    }`
+                  }
+                  onClick={() => handleClick(link.toLowerCase())}
+                >
+                  {link}
+                </NavLink>
+              </li>
             );
           })}
         </ul>
 
-        <button
-          className="btn3 px-6 py-3 rounded"
-          onClick={() =>
-            document
-              .getElementById("volunteer")
-              .scrollIntoView({ behavior: "smooth" })
-          }
-        >
-          Volunteer Now
-        </button>
-        {/* <HamburgerMenu/> */}
+        <Link to="/volunteer">
+          <button className="btn3 px-6 py-3 rounded hidden lg:block">
+            Volunteer Now
+          </button>
+        </Link>
+
+        <div className="block lg:hidden">
+          <HamburgerMenu />
+        </div>
       </div>
     </nav>
   );

@@ -16,7 +16,7 @@ const Form = () => {
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
-    }));
+    })); 
   };
 
   const validate = () => {
@@ -149,7 +149,7 @@ const Form = () => {
 
       <div>
         <button
-          className="py-3 px-8 btn2 flex gap-2 items-center rounded-full"
+          className="py-3 px-8 btn2 flex gap-2 items-center rounded-md"
           type="submit"
         >
           Let's Talk <FaArrowRight size={18} />

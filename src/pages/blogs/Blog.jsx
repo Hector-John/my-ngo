@@ -7,7 +7,7 @@ const Blog = () => {
   return (
     <div>
       <header
-        className="relative bg-fixed bg-center bg-cover h-[50vh] lg:h-[70vh] animate-fadeIn"
+        className="relative bg-fixed bg-center bg-cover h-[35vh] lg:h-[65vh] animate-fadeIn"
         style={{
           backgroundImage: `url(${images.causesBg})`,
         }}

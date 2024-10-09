@@ -18,7 +18,7 @@ const About = () => {
   return (
     <section>
       <header
-        className="relative bg-fixed bg-center bg-cover h-[25vh] lg:h-[50vh] animate-fadeIn"
+        className="relative bg-fixed bg-center bg-cover h-[35vh] lg:h-[65vh] animate-fadeIn"
         style={{
           backgroundImage: `url(${images.slider1})`,
         }}
